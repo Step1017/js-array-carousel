@@ -1,0 +1,73 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+#carousel {
+    height: 80%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightcoral;
+}
+
+#carousel #button-box .left-button,
+#carousel #button-box .right-button {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+#carousel #button-box .left-button {
+    left: 20px;
+}
+
+#carousel #button-box .right-button {
+    right: 20px;
+}
+
+#carousel #button-box .left-button:hover,
+#carousel #button-box .right-button:hover {
+cursor: pointer;
+}
+
+
+.hidden {
+    display: none;
+}
+
+#carousel #slide-box {
+    height: 100%;
+}
+
+#carousel #slide-box .slide {
+    height: 100%;
+    display: none;
+}
+
+#carousel #slide-box .slide.current {
+    display: block;
+}
+
+#carousel #slide-box .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
